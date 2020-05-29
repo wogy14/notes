@@ -37,12 +37,6 @@ class Validation {
         return regex.test(str);
     };
 
-    checkMinDate = (date, min) => {
-        if (date.getFullYear() <= min.getFullYear() && date.getMonth() <= min.getMonth() && date.getDay() < min.getDay())
-            return false;
-        return true;
-    };
-
     checkMinNumber = (number, min) => {
         if (number < min)
             return false;
